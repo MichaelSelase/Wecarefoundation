@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WeCare Foundation</title>
+  <link href="wecarepage2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">WeCare Foundation</div>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Making a Difference Together</h1>
+    <p>Empowering communities, spreading hope, and changing lives.</p>
+    <button class="btn" onclick="document.getElementById('donate').scrollIntoView({behavior:'smooth'})">Donate Now</button>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="about-text">
+      Helping Hands is a nonprofit organization dedicated to improving the lives of underprivileged communities through education, healthcare, and sustainable development programs. Our mission is to create lasting positive change by fostering empowerment and equality.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" tabindex="0" role="button" aria-label="Community Education">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQFKe75YbBS5PQ/feedshare-shrink_800/feedshare-shrink_800/0/1691596376460?e=2147483647&v=beta&t=4LBcfHfAc57nBS25SxlXu7rQfV5aBEt7wKJ58DEQy_U" alt="Community Education" class="project-img" />
+        <div class="project-content">
+          <h3>Community Education</h3>
+          <p>Providing quality education and resources to children and adults to foster skills and literacy in underserved areas.</p>
+        </div>
+      </div>
+      <div class="project-card" tabindex="0" role="button" aria-label="Healthcare Access">
+        <img src="https://www.actionagainsthunger.org/app/uploads/2022/10/MAD_NutHealth_2021_Stephane_Rakotomalala_-41_2-scaled-aspect-ratio-1920-850.jpg" alt="Healthcare Access" class="project-img" />
+        <div class="project-content">
+          <h3>Healthcare Access</h3>
+          <p>Organizing medical camps and awareness programs to improve health and well-being in remote communities.</p>
+        </div>
+      </div>
+      <div class="project-card" tabindex="0" role="button" aria-label="Feeding Program">
+        <img src="https://thumbs.dreamstime.com/b/hunger-refugee-camp-21620752.jpg?w=768" alt="Feeding Program" class="project-img" />
+        <div class="project-content">
+          <h3>Feeding Program</h3>
+          <p>The program aims to reducing hunger,poverty and malnutrition whereby providing free ,nutritionally  adequate meals to the public.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-involved">
+    <h2>Get Involved</h2>
+    <p class="get-involved-text">
+      Join us in making a difference. Volunteers are the heart of Helping Hands. Whether you want to help in education, healthcare, community outreach, or fundraising, your contribution matters. Sign up today and be a part of the change.
+    </p>
+  </section>
+
+  <section id="donate">
+    <h2>Donate</h2>
+    <div class="donate-section">
+      <p>Your generous donation supports our projects and helps us reach more communities in need. Every contribution, big or small, makes an impact.</p>
+      <a href="wecarepage3donation.html" class="donate-btn">Donate Now</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" onsubmit="handleContactSubmit(event)">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 WeCare Foundation. All rights reserved.</p>
+   <div class="social-icons">
+  <a href="https://www.facebook.com/share/p/16c5DUbu1a/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com/WeCarFoundation?t=bYNBxczDbJ1PKY0QGxDLgA&s=08" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/wecarefoundation_gt?igsh=cG95bTVnb2N5OGtv&utm_source=qr" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+  </footer>
+</body>
+</html>

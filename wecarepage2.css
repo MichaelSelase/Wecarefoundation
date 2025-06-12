@@ -1,0 +1,284 @@
+  <style>
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: #2a9d8f;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #264653;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    header {
+      background-color: #264653;
+      color: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li {
+      font-weight: 600;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+    nav ul li a:hover, nav ul li a.active {
+      background-color: #2a9d8f;
+      color: white;
+    }
+    .hero {
+  background: linear-gradient(rgba(38, 70, 83, 0.75), rgba(38, 70, 83, 0.75)), 
+              url("https://we-care.org/assets/STHS-WeCare-logo_tagline.png") no-repeat center center/cover;
+  height: 60vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 25px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+    .hero .btn {
+      background-color: #e76f51;
+      color: white;
+      font-weight: 700;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(231, 111, 81, 0.7);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .hero .btn:hover {
+      background-color: #d1543a;
+    }
+    section {
+      padding: 60px 0;
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .about-text {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      text-align: center;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .project-card {
+      background: #f1f1f1;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 15px 20px;
+    }
+    .project-content h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #2a9d8f;
+    }
+    .project-content p {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    .get-involved-text {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.05rem;
+      color: #555;
+      text-align: center;
+      line-height: 1.7;
+    }
+    .donate-section {
+      max-width: 700px;
+      margin: auto;
+      background: #e9f5f5;
+      border-radius: 12px;
+      padding: 30px 25px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(38, 70, 83, 0.1);
+    }
+    .donate-section p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+      color: #264653;
+    }
+    .donate-btn {
+      background-color: #2a9d8f;
+      color: white;
+      border: none;
+      padding: 14px 40px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 35px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(42, 157, 143, 0.7);
+      transition: background-color 0.3s ease;
+    }
+    .donate-btn:hover {
+      background-color: #1e5b6b;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      background: #fefefe;
+      padding: 25px 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #264653;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+      border-radius: 5px;
+      border: 1.5px solid #ccc;
+      font-size: 1rem;
+      font-family: 'Open Sans', sans-serif;
+      transition: border-color 0.3s ease;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #2a9d8f;
+      outline: none;
+    }
+    .contact-form button {
+      background-color: #264653;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #2a9d8f;
+    }
+    footer {
+      background-color: #264653;
+      color: #a2d5c6;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+    }
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: white;
+  background: #333;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.facebook { background: #3b5998; }
+.twitter  { background: #1da1f2; }
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+    }
+  </style>
